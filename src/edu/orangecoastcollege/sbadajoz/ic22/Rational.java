@@ -41,5 +41,9 @@ public void setDenominator(int denominator) throws ZeroDenominatorException
      return Math.abs(mNumerator) + "/" + Math.abs(mDenominator);
      else return "-" + Math.abs(mNumerator) + "/" + Math.abs(mDenominator);
  }
+
+ public boolean equals(Rational other) {
+     return toString().equals(other.toString());
+ }
  
 }
